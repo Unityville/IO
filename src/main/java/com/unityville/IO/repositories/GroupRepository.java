@@ -1,6 +1,6 @@
 package com.unityville.IO.repositories;
 
-import com.example.Unityville.entities.Group;
+import com.unityville.IO.entities.Group;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.unityville.IO.repositories;
 
-import com.example.Unityville.entities.User;
+import com.unityville.IO.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
