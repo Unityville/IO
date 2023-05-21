@@ -1,0 +1,8 @@
+package com.unityville.IO.repositories;
+
+import com.unityville.IO.entities.Comment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CommentRepository extends JpaRepository<Comment, Long> {
+
+}

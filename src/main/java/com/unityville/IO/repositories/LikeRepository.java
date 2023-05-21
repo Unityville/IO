@@ -1,11 +1,15 @@
 package com.unityville.IO.repositories;
 
 import com.unityville.IO.entities.Like;
-import com.unityville.IO.entities.Post;
-import com.unityville.IO.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LikeRepository extends JpaRepository<Like, Long> {
 
-    void deleteLikeByUserAndPost(User user, Post post);
+    void deleteLikeByUserIdAndPostId(Long userId, Long postId);
+
+    void deleteByUserIdAndCommentId(Long userId, Long postId);
+
+    Like findLikeByUserIdAndPostId(Long userId, Long postId);
+
+    Like findLikeByUserIdAndCommentId(Long userId, Long postId);
 }

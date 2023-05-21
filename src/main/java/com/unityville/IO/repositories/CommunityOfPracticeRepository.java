@@ -4,5 +4,4 @@ import com.unityville.IO.entities.CommunityOfPractice;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CommunityOfPracticeRepository extends JpaRepository<CommunityOfPractice, Long> {
-    CommunityOfPractice getCommunityOfPracticeByNameAndId(String name, Long id);
 }

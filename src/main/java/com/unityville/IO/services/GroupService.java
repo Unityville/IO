@@ -1,6 +1,5 @@
 package com.unityville.IO.services;
 
-import com.unityville.IO.entities.CommunityOfPractice;
 import com.unityville.IO.entities.Group;
 import com.unityville.IO.repositories.GroupRepository;
 import lombok.RequiredArgsConstructor;

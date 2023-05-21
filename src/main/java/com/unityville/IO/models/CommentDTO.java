@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
 @Builder
@@ -16,10 +17,16 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class LikeDTO {
+public class CommentDTO {
     private Long id;
-    private Timestamp timestamp;
-    private PostDTO post;
-    private CommentDTO comment;
+
+    private String content;
+
+    private Timestamp createTimestamp;
+
     private UserDTO user;
+
+    private List<LikeDTO> likes;
+
+    private PostDTO post;
 }

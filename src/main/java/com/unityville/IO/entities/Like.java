@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+
 @Entity
 @Table(name = "likes")
 @Builder
@@ -23,6 +24,9 @@ public class Like {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Post post;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Comment comment;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;

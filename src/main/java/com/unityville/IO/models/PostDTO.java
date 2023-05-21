@@ -3,8 +3,6 @@ package com.unityville.IO.models;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import com.unityville.IO.entities.Comment;
-import com.unityville.IO.services.CommentService;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -29,4 +27,5 @@ public class PostDTO {
     private UserDTO user;
     private CommunityOfPracticeDTO communityOfPractice;
     private List<LikeDTO> likes;
+    private List<CommentDTO> comments;
 }
